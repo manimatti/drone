@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkyView Drones</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #0f172a, #1e293b);
+      color: #fff;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #020617;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    h1, h2, h3 {
+      color: #38bdf8;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      padding: 4rem 2rem;
+    }
+    .hero img {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .btn {
+      display: inline-block;
+      background-color: #38bdf8;
+      color: #0f172a;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: #0ea5e9;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+    }
+    .services, .portfolio, .shop, .testimonials, .about, .contact {
+      padding: 4rem 2rem;
+    }
+    .card {
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .card img {
+      border-radius: 8px;
+      margin-bottom: 1rem;
+      width: 100%;
+      height: auto;
+    }
+    .text-center {
+      text-align: center;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: none;
+      font-size: 1rem;
+    }
+    .contact-form textarea {
+      resize: none;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SkyView Drones</h1>
+  </header>
+
+  <section class="hero container">
+    <div>
+      <h2>Explore the World from Above</h2>
+      <p>Professional drone services and products for businesses and enthusiasts.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Drone in action" />
+  </section>
+
+  <section class="services container">
+    <h3 class="text-center">Our Services</h3>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr))">
+      <div class="card">Aerial Photography</div>
+      <div class="card">Drone Mapping</div>
+      <div class="card">Surveying</div>
+      <div class="card">Inspections</div>
+    </div>
+  </section>
+
+  <section class="portfolio container">
+    <h3 class="text-center">Our Portfolio</h3>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))">
+      <img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92" class="card" alt="Portfolio 1" />
+      <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944" class="card" alt="Portfolio 2" />
+      <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" class="card" alt="Portfolio 3" />
+    </div>
+  </section>
+
+  <section id="shop" class="shop container">
+    <h3 class="text-center">Shop Drones</h3>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1615394538078-788dc4015ebf" alt="Drone 1" />
+        <h4>Drone Model 1</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1595433707802-808dd94cb296" alt="Drone 2" />
+        <h4>Drone Model 2</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1578926375605-eaf7559b1458" alt="Drone 3" />
+        <h4>Drone Model 3</h4>
+        <button class="btn">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials container">
+    <h3 class="text-center">What Clients Say</h3>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))">
+      <div class="card">“Amazing aerial shots! Made our marketing 10x better.”</div>
+      <div class="card">“Reliable, fast, and top quality service.”</div>
+      <div class="card">“Drones were delivered and working in 2 days!”</div>
+    </div>
+  </section>
+
+  <section class="about container">
+    <h3 class="text-center">About Us</h3>
+    <p style="text-align: center; max-width: 600px; margin: auto;">
+      SkyView Drones is a team of aerial experts providing professional drone solutions for various industries including real estate, construction, agriculture, and events. Our mission is to elevate your perspective with cutting-edge drone technology.
+    </p>
+  </section>
+
+  <section class="contact container">
+    <h3 class="text-center">Contact Us</h3>
+    <form class="contact-form" style="max-width: 600px; margin: auto;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SkyView Drones. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const buttons = document.querySelectorAll(".shop .btn");
+      buttons.forEach(btn => {
+        btn.addEventListener("click", () => {
+          alert("🛒 Added to cart!");
+        });
+      });
+
+      const form = document.querySelector(".contact-form");
+      form.addEventListener("submit", e => {
+        e.preventDefault();
+        alert("📬 Message sent! We'll be in touch shortly.");
+        form.reset();
+      });
+    });
+  </script>
+</body>
+</html>
